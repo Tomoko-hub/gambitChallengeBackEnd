@@ -20,3 +20,6 @@ Information on libraries and packages used
 -The token is issued when the email address and password match those of a user who has logged in once. (If the user's information is available in the Mongo DB, the token will be issued if the email address and password match.)
 
 -The token is valid for 23 hours after issuance.
+
+-Render(deploy)
+https://tomoko-gambitchallengebackend.onrender.com/
