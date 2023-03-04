@@ -5,7 +5,7 @@ const auth = async(req, res, next)=> {
     if (req.method === "GET") {
         return next()
     }
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMSIsImlhdCI6MTY3Nzg0NzIzMSwiZXhwIjoxNjc3OTMzNjMxfQ.6tFqEi6R7UGlR1IbZhqZi9gY3T-MLFEhXpEsc2WjOlk"
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhYXZpQGVtYWlsLmNvbSIsImlhdCI6MTY3Nzk1MDE5MywiZXhwIjoxNjc4MDc5NzkzfQ.LOyiWMLP5z3x1EguEgtlbHz5FtUL6xHYJv6CLONVCyI"
       
     //await req.headers.authorization.split("")[1]
     if (!token){

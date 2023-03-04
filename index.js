@@ -13,7 +13,7 @@ const { ResultModel, UserModel } = require("./utils/schemaModels")
 
 //functions
 //CREATE Result
-app.post("/register/createResult",auth , async(req, res)=> {
+app.post("/result/create",auth , async(req, res)=> {
     try{
         await connectDB()
         await ResultModel.create(req.body)
@@ -103,7 +103,7 @@ app.post("/user/login", async(req, res)=> {
                 const payload = { 
                     email : req.body.email 
                 }
-                const token = jwt.sign(payload, secret_key, {expiresIn: "23h"})
+                const token = jwt.sign(payload, secret_key, {expiresIn: "36h"})
                 console.log(token)
                 return res.status(200).json({message: "You are login!", token:token })
             }
